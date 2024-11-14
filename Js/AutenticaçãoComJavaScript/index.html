@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+</head>
+<body>
+    <h1>FAÇA SEU LOGIN</h1>
+    <form id="loginForm">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <button type="button" onclick="verificaCred()">LOGAR</button>
+    </form>
+
+    <script>
+        function verificaCred() {
+            let email = document.getElementById("email").value;
+            let senha = document.getElementById("senha").value;
+
+            let mensagemErro = '';
+
+            if (email === "") 
+            {
+                mensagemErro += "O campo e-mail precisa ser preenchido.\n";
+            }
+            if (senha === "")
+            {
+                mensagemErro += "O campo senha precisa ser preenchido.\n";
+            } 
+            else if (senha.length < 6) 
+            {
+                mensagemErro += "A senha precisa ter no mínimo 6 caracteres.\n";
+            }
+            if (mensagemErro !== '') 
+            {
+                alert(mensagemErro);
+            } else {
+                alert("Login bem-sucedido!");
+            }
+        }
+    </script>
+</body>
+</html>

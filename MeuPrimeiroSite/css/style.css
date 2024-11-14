@@ -1,0 +1,197 @@
+* {
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove preenchimentos padrão de todos os elementos */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;  /* Define a fonte para o corpo do documento */
+    font-size: 10px; /* Define o tamanho da fonte para 10 pixels */
+}
+
+ul#menu {
+    background-color: #4B7BA6; /* Define a cor de fundo do menu de navegação */
+    line-height: 60px; /* Define a altura da linha dentro do menu */
+    position: fixed; /* Fixa o menu na parte superior da página */
+    width: 100%; /* Define a largura total do menu */
+    text-align: right; /* Alinha o texto do menu à direita */
+    z-index: 1000; /* Define a ordem de empilhamento do menu */
+    top: 0; /* Define a posição superior do menu */
+    left: 0; /* Define a posição esquerda do menu */
+}
+
+#menu li {
+    display: inline; /* Define que os itens do menu serão exibidos em linha */
+}
+
+#menu a:link, a:visited {
+    font-size: 1.6rem; /* Define o tamanho da fonte para os links do menu */
+    text-transform: uppercase; /* Transforma o texto dos links em maiúsculas */
+    padding: 21px; /* Adiciona preenchimento aos links */
+    text-decoration: none; /* Remove a decoração de texto dos links */
+    color: #FFF; /* Define a cor do texto dos links como branco */
+    text-shadow: 1px 1px #000; /* Adiciona uma sombra de texto aos links */
+}
+
+#menu a:hover, a:active {
+    background-color: #6A732C; /* Define a cor de fundo dos links do menu quando hover ou active */
+}
+
+#home {
+    background-image: url(../images/9.jpg); /* Define a imagem de fundo da seção "home" */
+    width: 100%; /* Define a largura total da seção */
+    height: 100vh; /* Define a altura da seção como 100% da altura da viewport */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a área da seção */
+    background-position: center center; /* Centraliza a imagem de fundo */
+}
+
+h1 {
+    margin-top: 80px; /* Define a margem superior para o título */
+    margin-bottom: 30px; /* Define a margem inferior para o título */
+    text-align: center; /* Alinha o texto do título ao centro */
+}
+
+#about {
+    background-color: #6A732C; /* Define a cor de fundo da seção "about" */
+    color: #FFF; /* Define a cor do texto dentro da seção */
+    padding: 150px; /* Adiciona preenchimento interno à seção */
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+    line-height: 2.0rem; /* Define a altura da linha */
+    text-align: justify; /* Justifica o texto dentro da seção */
+}
+
+#about_button {
+    background-color: #4B7BA6; /* Define a cor de fundo do botão "about_button" */
+    color: #fff; /* Define a cor do texto do botão */
+    font-size: 1.6rem; /* Define o tamanho da fonte do botão */
+    padding: 20px 50px; /* Adiciona preenchimento ao botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+#aboutbutton button {
+    background-color: #4B7BA6; /* Define a cor de fundo do botão dentro da seção "aboutbutton" */
+    color: #fff; /* Define a cor do texto do botão */
+    font-size: 1.6rem; /* Define o tamanho da fonte do botão */
+    padding: 20px 50px; /* Adiciona preenchimento ao botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+#aboutbutton button:hover {
+    background-color: #53a64bd4;  /* Define a cor de fundo do botão dentro da seção "aboutbutton" quando hover */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+#aboutbutton {
+    display: flex; /* Define a exibição flexível do elemento */
+    justify-content: center; /* Alinha o conteúdo ao centro no eixo principal */
+    align-items: center; /* Alinha o conteúdo ao centro no eixo transversal */
+}
+
+#gallery {
+    background-color: #6997BF; /* Define a cor de fundo da seção "gallery" */
+    height: 100vh; /* Define a altura da seção como 100% da altura da viewport */
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+    padding: 50px; /* Adiciona preenchimento interno à seção */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+#gallery .img {
+    width: 300px; /* Define a largura das imagens */
+    border: 1px #FFF solid; /* Adiciona uma borda à imagem */
+    margin: 30px; /* Define as margens ao redor da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+    box-shadow: 10px 10px 30px #000; /* Adiciona uma sombra à imagem */
+}
+
+#contacts {
+    background-color: #52591B; /* Define a cor de fundo da seção "contacts" */
+    height: 200vh; /* Define a altura da seção como 200% da altura da viewport */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0px; /* Adiciona preenchimento interno à seção */
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+}
+
+#contacts label {
+    display: block; /* Define o rótulo como bloco para que cada um ocupe uma linha */
+}
+
+#contacts input, textarea {
+    width: 100%; /* Define a largura dos campos de entrada como 100% do contêiner pai */
+    max-width: 500px; /* Define a largura máxima dos campos de entrada */
+    font-size: 1.8rem; /* Define o tamanho da fonte */
+    padding: 15px; /* Adiciona preenchimento interno aos campos de entrada */
+    margin-bottom: 20px; /* Adiciona margem inferior aos campos de entrada */
+    border-radius: 10px; /* Adiciona bordas arredondadas aos campos de entrada */
+    border: none; /* Remove a borda dos campos de entrada */
+}
+
+#contacts button {
+    display: block; /* Define o botão como bloco para que ocupe toda a largura do contêiner pai */
+    margin: 0 auto; /* Centraliza o botão horizontalmente dentro do contêiner pai */
+    background-color: #4B7BA6; /* Define a cor de fundo do botão */
+    color: #FFF; /* Define a cor do texto do botão */
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+    padding: 20px 50px; /* Adiciona preenchimento interno ao botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao botão */
+}
+
+#contacts button:hover {
+    background-color: #6997BF; /* Define a cor de fundo do botão quando hover */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+}
+
+#suport {
+    background-color: #383D37; /* Define a cor de fundo da seção "suport" */
+    height: 100vh; /* Define a altura da seção como 100% da altura da viewport */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 90px; /* Adiciona preenchimento interno à seção */
+    font-size: 1.8rem; /* Define o tamanho da fonte */
+    margin-top: 80px; /* Adiciona margem superior para empurrar a seção para baixo */
+}
+
+#suport label {
+    display: block; /* Define o rótulo como bloco para que cada um ocupe uma linha */
+}
+
+#suport input, textarea {
+    width: 100%; /* Define a largura dos campos de entrada como 100% do contêiner pai */
+    max-width: 600px; /* Define a largura máxima dos campos de entrada */
+    font-size: 1.2rem; /* Define o tamanho da fonte */
+    padding: 15px; /* Adiciona preenchimento interno aos campos de entrada */
+    margin-bottom: 20px; /* Adiciona margem inferior aos campos de entrada */
+    border-radius: 10px; /* Adiciona bordas arredondadas aos campos de entrada */
+    border: none; /* Remove a borda dos campos de entrada */
+}
+
+#suport button {
+    display: block; /* Define o botão como bloco para que ocupe toda a largura do contêiner pai */
+    margin: 0 auto; /* Centraliza o botão horizontalmente dentro do contêiner pai */
+    background-color: #6A732C; /* Define a cor de fundo do botão */
+    color: #FFF; /* Define a cor do texto do botão */
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+    padding: 20px 50px; /* Adiciona preenchimento interno ao botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao botão */
+}
+
+#suport button:hover {
+    background-color: #6A732C; /* Define a cor de fundo do botão quando hover */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+}
+
+footer {
+    background-color: #4B7BA6; /* Define a cor de fundo do rodapé */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px; /* Adiciona preenchimento interno ao rodapé */
+    font-size: 1.6rem; /* Define o tamanho da fonte */
+    color: #fff; /* Define a cor do texto do rodapé */
+}

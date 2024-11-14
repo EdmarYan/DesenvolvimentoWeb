@@ -1,0 +1,162 @@
+/* Estilizações gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;    
+    padding: 0;
+}
+
+/* Estilizações ex3 */
+#alinhamento {
+    background-color: cyan;
+}
+
+#tituloalinhamento {
+    text-align: left;
+    font-size: 24px;
+    padding: 20px;
+}
+
+#texto1 {
+    color: purple;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#texto2 {
+    color: black;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#texto3 {
+    color: black;
+    text-align: center;
+}
+
+#texto4 {
+    color: red;
+    text-align: center;
+    font-size: 70px; 
+}
+
+#texto5 {
+    color: blue;
+    text-align: center;
+    font-size: 50px; 
+}
+
+#texto6 {
+    color: green;
+    text-align: center;
+    font-size: 30px; 
+}
+
+/*Estilizações ex4*/
+#tabela {
+    background-color: antiquewhite;
+}
+
+#cronograma {
+    margin: auto;
+    border: 3px solid orange;
+    text-align: center;
+}
+
+#cronograma td, th {
+    border: 1px solid orange;
+}
+
+/* Remove borda das células vazias */
+#cronograma td:empty {
+    border: none;
+}
+
+/* Fundo laranja para as células com a classe "aula" */
+#cronograma td.aula {
+    background-color: orange;
+    color: white; /* opcional, para o texto ficar mais visível */
+}
+
+#cronograma thead {
+    background: orange;
+}
+
+#cronograma caption {
+    font-size: 100px;
+}
+
+/*Estilização ex5*/
+#imagens {
+    background-image: url("imagem/fundo.jpg");
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teclas img {
+    width: 250px; 
+    height: auto; 
+}
+
+#letreiro img {
+    width: 400px; 
+    height: auto; 
+}
+
+/*Estilização ex5*/
+#listas{
+    background-color: blanchedalmond;
+}
+.azul{
+    border: 1px solid blue;
+}
+#vermelho1{
+    border: 1px solid red;
+    width: 50%; 
+    text-align: left; 
+    margin-left: 0;
+
+}
+#vermelho2{
+    border: 1px solid red;
+    width: 50%;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+}
+#pontoPreto{
+    list-style-type: disc;
+}
+#pontoBranco{
+    list-style-type: circle;
+}
+#quadradoPreto{
+    list-style-type: square;
+}
+
+/*Estilização ex6*/
+#tituloform{
+    text-align: center;
+    color: blue;
+}
+.form{
+    color: blue;
+    margin-left:20px ;
+}
+.form input,select{
+    border: 2px solid blue;
+}  
+
+
+/*Estilização ex7*/
+#index{
+    background-color: rgb(0, 170, 255);
+    text-align: center;
+}
+.navpage{
+    color: blue;
+}
+.navpage h6{
+    color: black;
+}
